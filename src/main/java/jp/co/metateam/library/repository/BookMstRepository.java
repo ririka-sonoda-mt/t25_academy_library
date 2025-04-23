@@ -10,7 +10,7 @@ import java.util.Optional;
 
 
 public interface BookMstRepository extends JpaRepository<BookMst, Long> {
-	boolean existsByIsbn(String isbn);
+	
 	@Query(value = "SELECT * FROM book_mst LIMIT 1000", nativeQuery = true)
 	List<BookMst> findLimitedBook();
 
