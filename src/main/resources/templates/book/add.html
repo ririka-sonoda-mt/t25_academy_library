@@ -29,7 +29,7 @@
                                         <p>
                                             <tr>
                                                 <th scope = "col">INBS<span style = "color:red;">*</span></th>
-                                                <p><td><input  name = "isbn" th:field="*{isbn}" placeholder = "INBSを入力"/></td></p>
+                                                <p><td><input  name = "isbn" th:field="*{isbn}" placeholder = "ISBNを入力"/></td></p>
                                                 <div class = "error_msg" th:if = "${#fields.hasErrors('isbn')}" th:errors="*{isbn}"></div>
                                         </tr>
                                         </p>
